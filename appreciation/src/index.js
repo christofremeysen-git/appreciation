@@ -1,23 +1,24 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
 import "./styling/index.css";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { storyblokInit, apiPlugin } from "@storyblok/react";
+import Page from "./components/Page";
+import Text from "./components/Text";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}></Route>
-        <Route path="over"></Route>
-        <Route path="blog" element=""></Route>
-        <Route path="*"></Route>
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
-);
+storyblokInit({
+  accessToken: "RcdWpyHYspaD2nXljeu6zwtt",
+  use: [apiPlugin],
+  components: {
+    page: Page,
+    text: Text,
+  },
+});
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App tab="home" />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -10,6 +10,9 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+    "storyblok-markdown-richtext": "^1.0.1",
+    "storyblok-rich-text-react-renderer": "^2.5.4",
+    "turndown": "^7.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -37,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "react-router-dom": "^6.3.0",

@@ -3,8 +3,9 @@ import useDarkMode from "../hooks/useDarkMode";
 
 export default function Header() {
   const [colorTheme, setTheme] = useDarkMode();
+
   return (
-    <div className="fixed top-0 bg-customDarkIndigo w-full p-5">
+    <header className="fixed top-0 bg-customDarkIndigo w-full p-5 z-10">
       <div className="flex items-center justify-end">
         <span
           onClick={() => setTheme(colorTheme)}
@@ -43,6 +44,6 @@ export default function Header() {
           )}
         </span>
       </div>
-    </div>
+    </header>
   );
 }

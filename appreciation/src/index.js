@@ -4,14 +4,20 @@ import reportWebVitals from "./reportWebVitals";
 import "./styling/index.css";
 import App from "./App";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
+import Image from "./components/Image";
 import Page from "./components/Page";
 import Text from "./components/Text";
+import Grid from "./components/Grid";
+import Teaser from "./components/Teaser";
 
 storyblokInit({
   accessToken: "RcdWpyHYspaD2nXljeu6zwtt",
   use: [apiPlugin],
   components: {
+    grid: Grid,
+    image: Image,
     page: Page,
+    teaser: Teaser,
     text: Text,
   },
 });

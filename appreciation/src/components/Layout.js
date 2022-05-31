@@ -7,7 +7,7 @@ import "../styling/index.css";
 const Layout = ({ children }) => (
   <div className="flex items-center justify-center min-h-screen dark:bg-customDarkBlack transition duration-1000">
     <Header />
-    {children}
+    <div className="mt-20">{children}</div>
   </div>
 );
 

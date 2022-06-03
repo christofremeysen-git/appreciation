@@ -1,5 +1,4 @@
 import { storyblokEditable } from "@storyblok/react";
-import "../styling/main.css";
 
 const Image = ({ blok }) => {
   return (

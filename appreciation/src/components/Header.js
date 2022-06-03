@@ -1,11 +1,13 @@
 import React from "react";
 import useDarkMode from "../hooks/useDarkMode";
+import Navigation from "./Navigation";
 
 export default function Header() {
   const [colorTheme, setTheme] = useDarkMode();
 
   return (
     <header className="fixed top-0 bg-customDarkIndigo w-full p-5 z-10">
+      <Navigation />
       <div className="flex items-center justify-end">
         <span
           onClick={() => setTheme(colorTheme)}

@@ -8,7 +8,7 @@ const Text = ({ blok }) => {
       {...storyblokEditable(blok)}
       key={blok._uid}
     >
-      <div className="container mx-auto py-6 space-y-3">
+      <div className="content container mx-auto py-6 space-y-3">
         {render(blok.text)}
       </div>
     </div>

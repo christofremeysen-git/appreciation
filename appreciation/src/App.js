@@ -1,8 +1,9 @@
 import { useStoryblok, StoryblokComponent } from "@storyblok/react";
 import Layout from "./components/Layout";
 import "./styling/App.css";
-import "./styling/main.css";
 import "./styling/index.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   let slug =

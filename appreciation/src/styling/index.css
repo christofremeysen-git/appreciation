@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-customDarkBlack text-4xl py-5 font-bold dark:text-white;
+  }
+  h2 {
+    @apply text-customDarkBlack text-2xl py-3 font-semibold dark:text-white;
+  }
+  p {
+    @apply text-customDarkBlack leading-10 dark:text-white;
+  }
+
+  .content ul li {
+    @apply flex place-items-center ml-10;
+    list-style: none;
+  }
+
+  .content ul li:before {
+    @apply h-5 w-5 mr-5;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='%2337c5ab' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7' /%3E%3C/svg%3E");
+  }
+
+  ol li {
+    @apply list-decimal indent-5 ml-10;
+  }
+
+  a {
+    @apply text-customDarkGreen underline;
+  }
+
+  a:hover {
+    @apply font-bold;
+  }
+
+  b {
+    @apply text-customDarkGreen;
+  }
+
+  .logo {
+    @apply object-scale-down h-44 py-2;
+    clip-path: circle(25%);
+    z-index: 1;
+  }
+
+  figcaption {
+    @apply flex items-center justify-center font-semibold;
+  }
+}
+
+.slick-dots li button::before {
+  @apply text-customDarkGreen text-xs leading-relaxed sm:text-xl !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  @apply text-customDarkGreen text-2xl sm:text-5xl !important;
+}
+
+.slick-slider {
+  @apply flex align-middle !important;
+}
+
+.slick-prev {
+  @apply absolute sm:inset-0 sm:top-1/2 sm:-left-12 box-border z-10 -ml-2 !important;
+}
+
+.slick-next {
+  @apply absolute left-full sm:inset-full sm:top-1/2 box-border z-10 ml-2 !important;
+}

@@ -13,7 +13,7 @@ const Teaser = ({ blok }) => {
         <img
           src={blok.image.filename}
           alt={blok.image.alt}
-          className="float-left -ml-20"
+          className="logo float-left -ml-20"
         />
         <div className="-ml-14">{render(blok.description)}</div>
       </div>

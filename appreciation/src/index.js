@@ -9,6 +9,7 @@ import Page from "./components/Page";
 import Text from "./components/Text";
 import Grid from "./components/Grid";
 import Teaser from "./components/Teaser";
+import Sliderslick from "./components/Slider";
 
 storyblokInit({
   accessToken: "RcdWpyHYspaD2nXljeu6zwtt",
@@ -17,6 +18,7 @@ storyblokInit({
     grid: Grid,
     image: Image,
     page: Page,
+    sliderslick: Sliderslick,
     teaser: Teaser,
     text: Text,
   },

@@ -9,7 +9,7 @@ import Page from "./components/Page";
 import Text from "./components/Text";
 import Grid from "./components/Grid";
 import Teaser from "./components/Teaser";
-import Sliderslick from "./components/Slider";
+import Sliderslick from "./components/Sliderslick";
 
 storyblokInit({
   accessToken: "RcdWpyHYspaD2nXljeu6zwtt",

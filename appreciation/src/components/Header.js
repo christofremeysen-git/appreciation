@@ -1,14 +1,13 @@
-import React from "react";
-import useDarkMode from "../hooks/useDarkMode";
+// import useDarkMode from "../hooks/useDarkMode";
 import Navigation from "./Navigation";
 
 export default function Header() {
-  const [colorTheme, setTheme] = useDarkMode();
+  // const [colorTheme, setTheme] = useDarkMode();
 
   return (
     <header className="fixed top-0 bg-customDarkIndigo w-full p-5 z-10">
       <Navigation />
-      <div className="flex items-center justify-end">
+      {/* <div className="flex items-center justify-end">
         <span
           onClick={() => setTheme(colorTheme)}
           className="w-10 h-10 bg-customLightBlue rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center"
@@ -45,7 +44,7 @@ export default function Header() {
             </svg>
           )}
         </span>
-      </div>
+      </div> */}
     </header>
   );
 }

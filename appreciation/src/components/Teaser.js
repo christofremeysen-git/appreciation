@@ -4,7 +4,7 @@ import { render } from "storyblok-rich-text-react-renderer";
 const Teaser = ({ blok }) => {
   return (
     <div
-      className="bg-white-half px-6 mt-14"
+      className="content bg-white-half px-6 mt-8 sm:mt-16"
       {...storyblokEditable(blok)}
       key={blok._uid}
     >

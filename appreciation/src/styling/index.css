@@ -44,10 +44,13 @@
   b {
     @apply text-customDarkGreen;
   }
-  .logo {
+  .profile {
     @apply object-scale-down h-44 py-2;
     clip-path: circle(25%);
     z-index: 1;
+  }
+  .content img {
+    @apply object-scale-down max-w-xs sm:max-w-2xl border-4 border-customDarkBlack dark:border-customDarkGreen my-2;
   }
   figcaption {
     @apply flex items-center justify-center font-semibold;
@@ -59,7 +62,7 @@
     @apply pt-5 divide-x-8;
   }
   pre {
-    @apply bg-customDarkBlack rounded-3xl text-customDarkGreen p-5 dark:border-4 border-customDarkGreen;
+    @apply w-full m-auto overflow-x-scroll whitespace-pre-wrap max-w-xs sm:max-w-fit text-opacity-75 bg-customDarkBlack rounded-3xl text-customDarkGreen p-5 dark:border-4 border-customDarkGreen dark:text-opacity-50;
   }
 }
 
@@ -97,5 +100,5 @@ nav {
 }
 
 nav > .active > a {
-  @apply: bg-customDarkBlack !important;
+  @apply bg-customDarkBlack !important;
 }

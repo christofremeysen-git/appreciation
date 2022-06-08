@@ -23,14 +23,20 @@
     @apply h-5 w-5 mr-5;
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='%2337c5ab' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7' /%3E%3C/svg%3E");
   }
+  ol {
+    @apply list-outside;
+  }
   ol li {
-    @apply list-decimal indent-5 ml-10;
+    @apply list-decimal ml-10;
   }
   a {
     @apply text-customDarkGreen underline;
   }
   a:hover {
     @apply font-bold;
+  }
+  footer {
+    @apply mt-16;
   }
   footer a {
     @apply text-customDarkIndigo underline;
@@ -48,6 +54,12 @@
   }
   nav a {
     @apply no-underline;
+  }
+  hr {
+    @apply pt-5 divide-x-8;
+  }
+  pre {
+    @apply bg-customDarkBlack rounded-3xl text-customDarkGreen p-5 dark:border-4 border-customDarkGreen;
   }
 }
 
@@ -73,11 +85,11 @@ nav {
 }
 
 .slick-prev {
-  @apply absolute sm:inset-0 sm:top-1/2 sm:-left-12 box-border z-10 -ml-2 !important;
+  @apply absolute sm:inset-0 sm:top-1/2 sm:-left-12 box-border z-0 -ml-2 !important;
 }
 
 .slick-next {
-  @apply absolute left-full sm:inset-full sm:top-1/2 box-border z-10 ml-2 !important;
+  @apply absolute left-full sm:inset-full sm:top-1/2 box-border z-0 ml-2 !important;
 }
 
 #test {

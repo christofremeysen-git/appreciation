@@ -7,7 +7,7 @@ import { useState } from "react";
 const navigation = [
   { name: "Intro", href: "/", current: true },
   { name: "Portfolio", href: "/portfolio", current: false },
-  { name: "Blog", href: "#", current: false },
+  { name: "Blog", href: "/blog", current: false },
 ];
 
 function classNames(...classes) {
@@ -17,7 +17,6 @@ function classNames(...classes) {
 export default function Navigation() {
   const [colorTheme, setTheme] = useDarkMode();
   const [current, setCurrent] = useState(window.location.pathname);
-  console.log(current);
   return (
     <Disclosure as="nav">
       {({ open }) => (
